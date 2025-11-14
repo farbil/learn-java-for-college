@@ -4,13 +4,15 @@ public class LaporanHarian {
     private String tanggal;
     private String aktivitas;
     private String konsumsiMakananan;
+    private Pemesanan pemesanan;
 
-    public LaporanHarian(String idLaporan, Hewan hewan, String tanggal, String aktivitas, String konsumsiMakananan){
+    public LaporanHarian(String idLaporan, Hewan hewan, String tanggal, String aktivitas, String konsumsiMakananan, Pemesanan pemesanan){
         this.idLaporan = idLaporan;
         this.hewan = hewan;
         this.tanggal = tanggal;
         this.aktivitas = aktivitas;
         this.konsumsiMakananan = konsumsiMakananan;
+        this.pemesanan = pemesanan;
     }
 
     public String ambilInformasiLaporan(){
@@ -22,6 +24,7 @@ public class LaporanHarian {
                 "\nNama Hewan: " + hewan.ambilNama() + // cara memanggil getter
                 "\nTanggal: " + tanggal +
                 "\nAktivitas: " + aktivitas +
-                "\nMakananan: " + konsumsiMakananan;
+                "\nMakananan: " + konsumsiMakananan +
+                "\nTotal Harga: " + (int) pemesanan.ambilTotalHarga();
     }
 }

@@ -34,10 +34,17 @@ public class FilkomPetMain {
         System.out.println("1. Penitipan Harian (Rp 50.000)");
         System.out.println("2. Grooming (Rp 30.000)");
         System.out.println("3. Penitipan Premium (Rp 100.000)");
-        System.out.print("Pilihan: ");
-        int pilih = input.nextInt();
+        int pilih = 0;
+        while(pilih<1 || pilih>3 ){
+            System.out.print("Pilih angka 1-3: ");
+            pilih = input.nextInt();
+            if(pilih<1 || pilih>3){
+                System.out.println("Hanya angka 1-3!");
+            }
+        }
 
         Layanan layanan;
+
 
         if(pilih == 1){
             layanan = new Layanan("Layanan1", "Penitipan Harian", 50000);
@@ -74,9 +81,9 @@ public class FilkomPetMain {
         System.out.print("Makanan: ");
         String makanan = input.nextLine();
 
-        LaporanHarian laporan = new LaporanHarian("Laporan1", hewan, tanggal, aktivitas, makanan);
+        LaporanHarian laporan = new LaporanHarian("Laporan1", hewan, tanggal, aktivitas, makanan, pemesanan);
 
-        System.out.println("\n=== Laporan Harian ===");
+        System.out.println("\n=== Laporan Hewan " + spesies + " " + namaPemilik + "===");
         System.out.println(laporan.ambilInformasiLaporan());
 
         input.close();

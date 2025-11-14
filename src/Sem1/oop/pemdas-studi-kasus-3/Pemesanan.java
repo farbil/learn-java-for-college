@@ -14,7 +14,6 @@ public class Pemesanan {
     }
 
     public void perkiraanTotalHarga(){
-
         totalHarga = layanan.ambilHargaPerHari() * hari;
     }
 
