@@ -15,6 +15,7 @@ public class LaporanHarian {
 
     public String ambilInformasiLaporan(){
         return "ID Laporan: " + idLaporan +
+                "\nID KTP Pemilik: " + hewan.ambilPemilik().ambilidPemilik() +
                 "\nNama Pemilik: " + hewan.ambilPemilik().ambilNama() +
                 "\nAlamat Pemilik: " + hewan.ambilPemilik().ambilAlamat() +
                 "\nNo HP: " + hewan.ambilPemilik().ambilPhone() +

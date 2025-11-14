@@ -11,6 +11,10 @@ public class Pemilik {
         this.phone = phone;
     }
 
+    public String ambilidPemilik(){
+        return idPemilik;
+    }
+
     public String ambilNama(){ // ini getter
         return nama;
     }
