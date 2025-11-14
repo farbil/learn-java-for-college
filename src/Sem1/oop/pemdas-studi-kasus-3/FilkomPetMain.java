@@ -8,7 +8,8 @@ public class FilkomPetMain {
 
         // Input Pemilik
         System.out.print("Masukkan ID KTP Pemilik: ");
-        String idPemilik = input.nextLine();
+        int idPemilik = input.nextInt();
+        input.nextLine();
         System.out.print("Masukkan Nama: ");
         String namaPemilik = input.nextLine();
         System.out.print("Masukkan Alamat: ");
@@ -44,7 +45,6 @@ public class FilkomPetMain {
         }
 
         Layanan layanan;
-
 
         if(pilih == 1){
             layanan = new Layanan("Layanan1", "Penitipan Harian", 50000);

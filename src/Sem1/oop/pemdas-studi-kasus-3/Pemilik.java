@@ -1,17 +1,17 @@
 public class Pemilik {
-    private String idPemilik;
+    private int idPemilik;
     private String nama;
     private String alamat;
     private String phone;
 
-    public Pemilik(String idPemilik, String nama, String alamat, String phone){ // ini Konstructor
+    public Pemilik(int idPemilik, String nama, String alamat, String phone){ // ini Konstructor
         this.idPemilik = idPemilik;
         this.nama = nama;
         this.alamat = alamat;
         this.phone = phone;
     }
 
-    public String ambilidPemilik(){
+    public int ambilidPemilik(){
         return idPemilik;
     }
 
