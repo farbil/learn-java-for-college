@@ -19,8 +19,6 @@ public class FilkomPetMain {
         Pemilik pemilik = new Pemilik(idPemilik, namaPemilik, alamatPemilik, phonePemilik);
 
         // Input Hewan
-        System.out.print("\nMasukkan ID Hewan: ");
-        String idHewan = input.nextLine();
         System.out.print("Masukkan Nama Hewan: ");
         String namaHewan = input.nextLine();
         System.out.print("Masukkan Umur Hewan: ");
@@ -29,7 +27,7 @@ public class FilkomPetMain {
         System.out.print("Masukkan spesies: ");
         String spesies = input.nextLine();
 
-        Hewan hewan = new Hewan(idHewan, namaHewan, umurHewan, spesies, pemilik);
+        Hewan hewan = new Hewan(namaHewan, umurHewan, spesies, pemilik);
 
         // Pilih Layanan
         System.out.println("\n=== Pilih Layanan ===");

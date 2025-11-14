@@ -1,13 +1,11 @@
 public class Hewan {
-    private String idHewan;
     private String nama;
     private int umur;
     private String spesies;
     private Pemilik pemilik;
 
 
-    public Hewan(String petId, String nama, int umur, String spesies, Pemilik pemilik){ // ini Konstructor
-        this.idHewan = petId;
+    public Hewan(String nama, int umur, String spesies, Pemilik pemilik){ // ini Konstructor
         this.nama = nama;
         this.umur = umur;
         this.spesies = spesies;
