@@ -30,6 +30,6 @@ public class LaporanHarian {
                 "\n-- Detail Pemesanan --" +
                 "\n" + pemesanan.ambilRincianPemesanan().split("\n")[2] +
                 "\n" + pemesanan.ambilRincianPemesanan().split("\n")[3] +
-                "\nTotal Biaya: " + (int) pemesanan.ambilTotalHarga();
+                "\nTotal Biaya: " + "Rp" +(int) pemesanan.ambilTotalHarga();
     }
 }

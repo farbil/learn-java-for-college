@@ -8,7 +8,7 @@ public class FilkomPetMain {
 
         // Input Pemilik
         System.out.print("Masukkan ID KTP Pemilik: ");
-        int idPemilik = input.nextInt();
+        String idPemilik = input.nextLine();
         input.nextLine();
         System.out.print("Masukkan Nama: ");
         String namaPemilik = input.nextLine();
